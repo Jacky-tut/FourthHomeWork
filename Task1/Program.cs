@@ -6,12 +6,16 @@
 */
 
 Console.WriteLine("Введите число A: ");
-string numberOneStr = Console.ReadLine();
-Console.WriteLine("Введите число B: ");
-string numberTwoStr = Console.ReadLine();
+int numberA = int.Parse(Console.ReadLine()??"");
+numberA = Math.Abs(numberA);
+string numberOneStr = Convert.ToString(numberA);
 
-int numberA = Convert.ToInt32(numberOneStr);
-int numberB = Convert.ToInt32(numberTwoStr);
+Console.WriteLine("Введите число B: ");
+int numberB = int.Parse(Console.ReadLine()??"");
+numberB = Math.Abs(numberB);
+string numberTwoStr = Convert.ToString(numberB);
+
+
 int tmp = numberA;
 for (int i = 1; i <= numberB; i++)
 {
